@@ -8,6 +8,7 @@ echo {'SiteNumber':'%1'} > appsettings.json
 docker build -t kestrel%1 .
 cd ..
 
+rem docker run -it -d -p 8081:80 --rm --name test paulbkroll/kestrelhelloworld
 docker run -it -d -p 808%1:80 --rm --name kestrel%1 kestrel%1
 explorer "http://localhost:808%1"
 GOTO DONE

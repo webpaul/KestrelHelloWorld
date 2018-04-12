@@ -1,2 +1,4 @@
 /src/webui/obj
 /src/webui/bin
+.vs
+/src/webui/webui.csproj.user
